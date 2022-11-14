@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikel</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body id="login">
+    <main>
+        <div class="container-lg">
+            <div class="row ">
+                <div class="col d-flex justify-content-center my-5 flex-column">
+                    <div class="text-login">
+                        <p>Organize suas finaças de um jeito fácil.</p>
+                        <p>Controle seu dinheiro e investimentos.</p>
+                        <p> Economize e atinja seus objetivos.</p>
+                    </div>
+                    <div>
+                        <img src="./imagens/pocket.png" alt="pocket" class="image-fluid" srcset="">
+                    </div>
+                    <div class="text-center">
+                        <img src="./imagens/coins.png" alt="coins" class="coins img-fluid d-none d-md-inline" srcset="">
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center my-5 flex-column">
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col">
+                                <div class="text-center mb-3">
+                                <img src="./imagens/nikel-logo.png" alt="" class = " img-fluid" srcset="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col">
+                              <form id="login-form">
+                                <div class="mb-3">
+                                  <label for="email-input" class="form-label">E-mail</label>
+                                  <input type="email" class="form-control" id="email-input" aria-describedby="emailHelp" required>
+                                  <div id="emailHelp" class="form-text">Utilize seu e-mail para realizar o login.</div>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="password-input" class="form-label">Senha</label>
+                                  <input type="password" class="form-control" id="password-input" required>
+                                </div>
+                                <div class="mb-3 form-check">
+                                  <input type="checkbox" class="form-check-input" id="session-check">
+                                  <label class="form-check-label" for="session-check">Permanecer logado.</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Entrar</button>
+                              </form> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p id="link-conta" class="text-center mt-2 form-text" data-bs-toggle="modal" data-bs-target="#register-modal">Ainda não tem uma conta? <span class="link-default"> Crie agora.</span></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="text-center mt-5">
+                                <img src="./imagens/codai-logo.png" alt="" class="img-fluid" srcset="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="text-center">
+                            <img src="./imagens/growdev-logo.png" alt="" class="img-fluid" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div class="modal fade" id="register-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Crie sua conta</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form id="creat-form">
+      <div class="modal-body">
+            <div class="mb-3">
+              <label for="email-creat-input" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="email-creat-input" aria-describedby="emailHelp" required>
+              <div id="emailHelp" class="form-text">Utilize seu melhor e-mail para criar a conta.</div>
+            </div>
+            <div class="mb-3">
+              <label for="password-creat-input" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="password-creat-input" required>
+            <div id="emailHelp" class="form-text">Crie uma senha e guarde para não esquecer.</div>
+            </div>
+            <div class="mb-3 form-check">              
+            </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary button-cancel" data-bs-dismiss="modal">Cancelar</button>
+        <button type="submit" class="btn btn-primary button-default">Criar conta</button>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
+    </main>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
